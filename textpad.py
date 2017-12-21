@@ -1,8 +1,8 @@
-import math
-x = -4
-if x < 0:
-    print("The negative number ", x, " is not valid here.")
-    x = 42
-    print("I've decided to use the number ", x, " instead.")
+def print_square_root(x):
+    if x <= 0:
+        print("Positive numbers only, please.")
+        return
 
-print("The square root of ", x, "is", math.sqrt(x))
+    result = x**0.5
+    print("The square root of", x, "is", result)
+print_square_root(-4)
