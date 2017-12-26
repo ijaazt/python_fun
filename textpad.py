@@ -1,4 +1,5 @@
 day_num = int(input("What day Number? "))
+sleeps  = int(input("How many sleeps have you been gone?"))
 day_names = ["Sunday", "Monday", "Tuesday", "Wendnesday", "Thursday", "Fridaay", "Saturday"]
 
 if day_num < 7 and day_num >= 0:
@@ -10,4 +11,8 @@ else:
     else:
         print(day_names[day_num])
 
-
+the_day = (sleeps % 7) + day_num
+    print(day_names[the_day])
+elif the_day >= 7:
+else:
+    pass
