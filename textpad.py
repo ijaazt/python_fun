@@ -12,7 +12,9 @@ else:
         print(day_names[day_num])
 
 the_day = (sleeps % 7) + day_num
+if the_day <= 6:
     print(day_names[the_day])
 elif the_day >= 7:
+    print(day_names[(the_day - 7)])
 else:
     pass
